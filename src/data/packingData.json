@@ -1,0 +1,443 @@
+{
+  "categories": {
+    "documents": {
+      "name": "📄 Документи",
+      "items": [
+        {
+          "id": "passport",
+          "name": "Паспорт",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "id_card",
+          "name": "ID картка",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "tickets",
+          "name": "Квитки (роздруковані або в телефоні)",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "insurance",
+          "name": "Страховий поліс",
+          "essential": false,
+          "conditions": {
+            "locationType": ["mountains", "skiing"]
+          }
+        },
+        {
+          "id": "visa",
+          "name": "Віза (якщо потрібна)",
+          "essential": false,
+          "conditions": {}
+        },
+        {
+          "id": "vaccination",
+          "name": "Сертифікат вакцинації",
+          "essential": false,
+          "conditions": {}
+        }
+      ]
+    },
+    "money": {
+      "name": "💰 Гроші та картки",
+      "items": [
+        {
+          "id": "cash",
+          "name": "Готівка (місцева валюта)",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "cards",
+          "name": "Банківські картки",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "backup_card",
+          "name": "Запасна картка",
+          "essential": false,
+          "conditions": {}
+        }
+      ]
+    },
+    "hygiene": {
+      "name": "🧴 Гігієна",
+      "items": [
+        {
+          "id": "toothbrush",
+          "name": "Зубна щітка",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "toothpaste",
+          "name": "Зубна паста",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "shampoo",
+          "name": "Шампунь",
+          "essential": true,
+          "conditions": {
+            "minDays": 2
+          }
+        },
+        {
+          "id": "soap",
+          "name": "Мило/Гель для душу",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "deodorant",
+          "name": "Дезодорант",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "razor",
+          "name": "Бритва",
+          "essential": false,
+          "conditions": {
+            "minDays": 3
+          }
+        },
+        {
+          "id": "sunscreen",
+          "name": "Сонцезахисний крем",
+          "essential": false,
+          "conditions": {
+            "locationType": ["sea", "mountains"],
+            "activities": ["beach", "skiing", "hiking"]
+          }
+        },
+        {
+          "id": "towel",
+          "name": "Рушник",
+          "essential": true,
+          "conditions": {
+            "locationType": ["camping"]
+          }
+        }
+      ]
+    },
+    "clothing": {
+      "name": "👕 Одяг",
+      "items": [
+        {
+          "id": "underwear",
+          "name": "Нижня білизна",
+          "essential": true,
+          "quantity": "days",
+          "conditions": {}
+        },
+        {
+          "id": "socks",
+          "name": "Шкарпетки",
+          "essential": true,
+          "quantity": "days",
+          "conditions": {}
+        },
+        {
+          "id": "tshirts",
+          "name": "Футболки",
+          "essential": true,
+          "quantity": "half_days",
+          "conditions": {}
+        },
+        {
+          "id": "pants",
+          "name": "Штани",
+          "essential": true,
+          "quantity": 2,
+          "conditions": {}
+        },
+        {
+          "id": "jacket",
+          "name": "Куртка/Вітровка",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "warm_jacket",
+          "name": "Тепла куртка",
+          "essential": false,
+          "conditions": {
+            "locationType": ["mountains"],
+            "weather": "cold"
+          }
+        },
+        {
+          "id": "thermal_underwear",
+          "name": "Термобілизна",
+          "essential": false,
+          "conditions": {
+            "activities": ["skiing", "hiking"],
+            "weather": "cold"
+          }
+        },
+        {
+          "id": "swimsuit",
+          "name": "Купальник/Плавки",
+          "essential": false,
+          "conditions": {
+            "locationType": ["sea"],
+            "activities": ["swimming", "beach"]
+          }
+        },
+        {
+          "id": "formal_clothes",
+          "name": "Офіційний одяг",
+          "essential": false,
+          "conditions": {
+            "activities": ["work"]
+          }
+        },
+        {
+          "id": "party_clothes",
+          "name": "Вечірній одяг",
+          "essential": false,
+          "conditions": {
+            "activities": ["party"]
+          }
+        },
+        {
+          "id": "rain_jacket",
+          "name": "Дощовик",
+          "essential": false,
+          "conditions": {
+            "weather": "rainy"
+          }
+        },
+        {
+          "id": "hat",
+          "name": "Шапка",
+          "essential": false,
+          "conditions": {
+            "weather": "cold"
+          }
+        },
+        {
+          "id": "sun_hat",
+          "name": "Капелюх від сонця",
+          "essential": false,
+          "conditions": {
+            "locationType": ["sea"],
+            "weather": "hot"
+          }
+        }
+      ]
+    },
+    "footwear": {
+      "name": "👟 Взуття",
+      "items": [
+        {
+          "id": "sneakers",
+          "name": "Кросівки",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "flip_flops",
+          "name": "В'єтнамки/Сланці",
+          "essential": false,
+          "conditions": {
+            "locationType": ["sea", "camping"]
+          }
+        },
+        {
+          "id": "hiking_boots",
+          "name": "Трекінгові черевики",
+          "essential": false,
+          "conditions": {
+            "locationType": ["mountains", "camping"],
+            "activities": ["hiking"]
+          }
+        },
+        {
+          "id": "formal_shoes",
+          "name": "Офіційне взуття",
+          "essential": false,
+          "conditions": {
+            "activities": ["work", "party"]
+          }
+        }
+      ]
+    },
+    "electronics": {
+      "name": "📱 Електроніка",
+      "items": [
+        {
+          "id": "phone",
+          "name": "Телефон",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "phone_charger",
+          "name": "Зарядка для телефону",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "powerbank",
+          "name": "Павербанк",
+          "essential": false,
+          "conditions": {
+            "minDays": 2
+          }
+        },
+        {
+          "id": "laptop",
+          "name": "Ноутбук",
+          "essential": false,
+          "conditions": {
+            "activities": ["work"]
+          }
+        },
+        {
+          "id": "laptop_charger",
+          "name": "Зарядка для ноутбука",
+          "essential": false,
+          "conditions": {
+            "activities": ["work"]
+          }
+        },
+        {
+          "id": "camera",
+          "name": "Фотоапарат",
+          "essential": false,
+          "conditions": {
+            "activities": ["sightseeing"]
+          }
+        },
+        {
+          "id": "headphones",
+          "name": "Навушники",
+          "essential": false,
+          "conditions": {}
+        }
+      ]
+    },
+    "health": {
+      "name": "💊 Здоров'я",
+      "items": [
+        {
+          "id": "first_aid_kit",
+          "name": "Аптечка (бинт, пластирі)",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "painkillers",
+          "name": "Знеболюючі",
+          "essential": false,
+          "conditions": {}
+        },
+        {
+          "id": "personal_meds",
+          "name": "Особисті ліки",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "antihistamines",
+          "name": "Антигістамінні",
+          "essential": false,
+          "conditions": {}
+        }
+      ]
+    },
+    "sports": {
+      "name": "⛷️ Спорт та активності",
+      "items": [
+        {
+          "id": "ski_equipment",
+          "name": "Лижне спорядження (можна взяти в оренду)",
+          "essential": false,
+          "conditions": {
+            "activities": ["skiing"]
+          }
+        },
+        {
+          "id": "goggles",
+          "name": "Лижна маска",
+          "essential": false,
+          "conditions": {
+            "activities": ["skiing"]
+          }
+        },
+        {
+          "id": "sunglasses",
+          "name": "Сонцезахисні окуляри",
+          "essential": false,
+          "conditions": {
+            "locationType": ["sea", "mountains"]
+          }
+        },
+        {
+          "id": "backpack",
+          "name": "Рюкзак для походів",
+          "essential": false,
+          "conditions": {
+            "activities": ["hiking"]
+          }
+        },
+        {
+          "id": "water_bottle",
+          "name": "Пляшка для води",
+          "essential": false,
+          "conditions": {
+            "activities": ["hiking", "beach"]
+          }
+        }
+      ]
+    },
+    "misc": {
+      "name": "🎒 Різне",
+      "items": [
+        {
+          "id": "bag",
+          "name": "Валіза/Сумка",
+          "essential": true,
+          "conditions": {}
+        },
+        {
+          "id": "plastic_bags",
+          "name": "Пакети для брудного одягу",
+          "essential": false,
+          "conditions": {
+            "minDays": 3
+          }
+        },
+        {
+          "id": "book",
+          "name": "Книга/Читалка",
+          "essential": false,
+          "conditions": {}
+        },
+        {
+          "id": "snacks",
+          "name": "Снеки на дорогу",
+          "essential": false,
+          "conditions": {}
+        },
+        {
+          "id": "umbrella",
+          "name": "Парасолька",
+          "essential": false,
+          "conditions": {
+            "weather": "rainy"
+          }
+        }
+      ]
+    }
+  }
+}

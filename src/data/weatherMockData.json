@@ -1,0 +1,222 @@
+{
+  "mockWeatherData": {
+    "буковель": {
+      "location": "Буковель, Карпати",
+      "winter": {
+        "temp": -8,
+        "condition": "snowy",
+        "humidity": 85,
+        "windSpeed": 15,
+        "description": "Сніжно, хороші умови для лиж"
+      },
+      "spring": {
+        "temp": 8,
+        "condition": "rainy",
+        "humidity": 70,
+        "windSpeed": 10,
+        "description": "Прохолодно, можливі дощі"
+      },
+      "summer": {
+        "temp": 18,
+        "condition": "partly_cloudy",
+        "humidity": 60,
+        "windSpeed": 8,
+        "description": "М'який клімат, ідеально для походів"
+      },
+      "autumn": {
+        "temp": 10,
+        "condition": "rainy",
+        "humidity": 75,
+        "windSpeed": 12,
+        "description": "Прохолодно, часті дощі"
+      }
+    },
+    "одеса": {
+      "location": "Одеса, Чорне море",
+      "winter": {
+        "temp": 2,
+        "condition": "cloudy",
+        "humidity": 80,
+        "windSpeed": 20,
+        "description": "Вітряно, холодно біля моря"
+      },
+      "spring": {
+        "temp": 15,
+        "condition": "sunny",
+        "humidity": 65,
+        "windSpeed": 12,
+        "description": "Тепло, приємна погода"
+      },
+      "summer": {
+        "temp": 28,
+        "condition": "sunny",
+        "humidity": 60,
+        "windSpeed": 10,
+        "description": "Спекотно, ідеально для пляжу"
+      },
+      "autumn": {
+        "temp": 16,
+        "condition": "partly_cloudy",
+        "humidity": 70,
+        "windSpeed": 15,
+        "description": "Тепло, комфортно"
+      }
+    },
+    "київ": {
+      "location": "Київ",
+      "winter": {
+        "temp": -5,
+        "condition": "snowy",
+        "humidity": 85,
+        "windSpeed": 12,
+        "description": "Морозно, можливий сніг"
+      },
+      "spring": {
+        "temp": 12,
+        "condition": "rainy",
+        "humidity": 70,
+        "windSpeed": 10,
+        "description": "Мінлива погода, беріть парасольку"
+      },
+      "summer": {
+        "temp": 25,
+        "condition": "sunny",
+        "humidity": 60,
+        "windSpeed": 8,
+        "description": "Тепло і сонячно"
+      },
+      "autumn": {
+        "temp": 10,
+        "condition": "rainy",
+        "humidity": 75,
+        "windSpeed": 12,
+        "description": "Прохолодно, часті дощі"
+      }
+    },
+    "львів": {
+      "location": "Львів",
+      "winter": {
+        "temp": -3,
+        "condition": "snowy",
+        "humidity": 80,
+        "windSpeed": 10,
+        "description": "Холодно, сніжно"
+      },
+      "spring": {
+        "temp": 13,
+        "condition": "partly_cloudy",
+        "humidity": 65,
+        "windSpeed": 9,
+        "description": "Прохолодно, змінна хмарність"
+      },
+      "summer": {
+        "temp": 23,
+        "condition": "sunny",
+        "humidity": 60,
+        "windSpeed": 7,
+        "description": "Комфортно тепло"
+      },
+      "autumn": {
+        "temp": 11,
+        "condition": "rainy",
+        "humidity": 75,
+        "windSpeed": 11,
+        "description": "Прохолодно, дощі"
+      }
+    },
+    "карпати": {
+      "location": "Карпати",
+      "winter": {
+        "temp": -10,
+        "condition": "snowy",
+        "humidity": 90,
+        "windSpeed": 18,
+        "description": "Дуже холодно, сильний сніг"
+      },
+      "spring": {
+        "temp": 7,
+        "condition": "rainy",
+        "humidity": 75,
+        "windSpeed": 12,
+        "description": "Прохолодно, волого"
+      },
+      "summer": {
+        "temp": 16,
+        "condition": "partly_cloudy",
+        "humidity": 65,
+        "windSpeed": 10,
+        "description": "Свіже повітря, ідеально для походів"
+      },
+      "autumn": {
+        "temp": 8,
+        "condition": "rainy",
+        "humidity": 80,
+        "windSpeed": 14,
+        "description": "Прохолодно, волого"
+      }
+    }
+  },
+  "weatherConditions": {
+    "sunny": {
+      "icon": "☀️",
+      "name": "Сонячно",
+      "packingTip": "Візьміть сонцезахисні окуляри та крем від сонця"
+    },
+    "partly_cloudy": {
+      "icon": "⛅",
+      "name": "Мінлива хмарність",
+      "packingTip": "Може знадобитись легка куртка"
+    },
+    "cloudy": {
+      "icon": "☁️",
+      "name": "Хмарно",
+      "packingTip": "Прохолодно, одягайтесь теплу"
+    },
+    "rainy": {
+      "icon": "🌧️",
+      "name": "Дощ",
+      "packingTip": "Обов'язково візьміть парасольку та дощовик"
+    },
+    "snowy": {
+      "icon": "❄️",
+      "name": "Сніг",
+      "packingTip": "Потрібен теплий одяг, шапка, рукавиці"
+    }
+  },
+  "temperatureRanges": {
+    "very_cold": {
+      "max": -5,
+      "label": "Дуже холодно",
+      "recommendation": "Термобілизна, тепла куртка, шапка, рукавиці обов'язкові"
+    },
+    "cold": {
+      "min": -5,
+      "max": 5,
+      "label": "Холодно",
+      "recommendation": "Тепла куртка, шапка рекомендуються"
+    },
+    "cool": {
+      "min": 5,
+      "max": 15,
+      "label": "Прохолодно",
+      "recommendation": "Куртка або светр знадобляться"
+    },
+    "mild": {
+      "min": 15,
+      "max": 20,
+      "label": "М'яко",
+      "recommendation": "Легкий одяг, можлива куртка на вечір"
+    },
+    "warm": {
+      "min": 20,
+      "max": 28,
+      "label": "Тепло",
+      "recommendation": "Легкий одяг, футболки, шорти"
+    },
+    "hot": {
+      "min": 28,
+      "label": "Спекотно",
+      "recommendation": "Легкий одяг, обов'язково головний убір та сонцезахист"
+    }
+  }
+}
